@@ -14,10 +14,15 @@ let description = document.querySelector("#description");
 let imagePic = document.querySelector("#imagePic");
 let rating = document.querySelector("#rating");
 let comments = document.querySelector("#comments");
+//Form for submitting comments (commentSubmitter)
+let form = document.querySelector("#form");
+form.addEventListener("submit", (e) => commentSubmitter(e));
+let exhibitForForm = {};
 
 //Function to render image display
 function renderExhibits(exhibitsArray) {
   exhibitsArray.forEach((exhibit) => {
+    exhibitForForm = exhibit;
     let image = document.createElement("img");
     image.src = exhibit.image;
     imageContainer.appendChild(image);
@@ -31,5 +36,13 @@ function renderDetails(exhibit) {
   description.textContent = exhibit.description;
   imagePic.src = exhibit.image;
   rating.textContent = exhibit.rating + " Stars";
-  comments.textContents = exhibit.comments;
+  comments.textContent = exhibit.comments;
+}
+
+function commentSubmitter(e) {
+  e.preventDefault();
+  exhibitForForm.comments =
+    exhibitForForm.comments + "\n/" + e.target.text.value;
+  renderDetails(exhibitForForm);
+  form.reset();
 }
