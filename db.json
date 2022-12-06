@@ -1,0 +1,94 @@
+{
+  "exhibits": [
+    {
+      "id": 1,
+      "name": "Penguin",
+      "section": "Arctic",
+      "description": "Penguins are beautiful birds that can`t fly.",
+      "image": "https://denverzoo.org/wp-content/uploads/2020/12/AfricanPenguin_Exhibit_Birds_Borellis_210915_007-scaled.jpg",
+      "rating": 4.0,
+      "comments": ""
+    },
+    {
+      "id": 2,
+      "name": "Black bear",
+      "section": "Woodland",
+      "description": "Black bears sleep all winter and laze around the rest of the year as well.",
+      "image": "https://bear.org/wp-content/uploads/2008/02/NABC_Holly_Lucky_Play.jpg",
+      "rating": 3.5,
+      "comments": ""
+    },
+    {
+      "id": 3,
+      "name": "Snake",
+      "section": "Jungle",
+      "description": "Snakes can strong and weirdly shaped animals.",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/13/0f/f0/edisto-island-serpentarium.jpg",
+      "rating": 3.8,
+      "comments": ""
+    },
+    {
+      "id": 4,
+      "name": "Polar bear",
+      "section": "Arctic",
+      "description": "Polar bears can eat penguins.",
+      "image": "https://cincinnatizoo.org/wp-content/uploads/2016/12/DSC_0045-3.jpg",
+      "rating": 4.2,
+      "comments": ""
+    },
+    {
+      "id": 5,
+      "name": "Moose",
+      "section": "Woodland",
+      "description": "Moose are larger than you think.",
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/08/4b/07/94/minnesota-zoo.jpg",
+      "rating": 4.0,
+      "comments": ""
+    },
+    {
+      "id": 6,
+      "name": "Zebra",
+      "section": "Savana",
+      "description": "Zebras are the deer of the savana",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Dallas_Zoo_Zebra.jpg",
+      "rating": 5.0,
+      "comments": ""
+    },
+    {
+      "id": 7,
+      "name": "Chimpanzee",
+      "section": "Jungle",
+      "description": "Chimpanzees are very smart.",
+      "image": "https://clrdesign.com/wp-content/uploads/2019/10/LAZ94CHI-4-1.jpg",
+      "rating": 4.5,
+      "comments": ""
+    },
+    {
+      "id": 8,
+      "name": "Wolf",
+      "section": "Woodland",
+      "description": "Wolves hunt in packs.",
+      "image": "https://cdn.kqed.org/wp-content/uploads/sites/35/2016/06/Wolf-Brothers_SF-Zoo-800x400.jpg",
+      "rating": 4.1,
+      "comments": ""
+    },
+    {
+      "id": 9,
+      "name": "Seal",
+      "section": "Arctic",
+      "description": "Seals eat fish.",
+      "image": "https://www.stlzoo.org/files/1515/3721/2689/sealion080118winkelman-3.jpg",
+      "rating": 3.7,
+      "comments": ""
+    },
+    {
+      "id": 10,
+      "name": "Giraffe",
+      "section": "Savana",
+      "description": "Giraffe are very tall.",
+      "image": "https://images.squarespace-cdn.com/content/v1/59cd7fc62aeba51f0667b337/1586875423643-L6IJFHRRCOO51Q0RHG09/zoo.jpg",
+      "rating": 4.4,
+      "comments": ""
+    }
+  ]
+}

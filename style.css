@@ -1,0 +1,37 @@
+html {
+  background-color: rgb(112, 176, 230);
+}
+
+h1 {
+  color: rgb(177, 22, 2);
+  text-align: center;
+}
+
+#site-description {
+  color: rgb(83, 1, 1);
+}
+
+#image-container img {
+  width: 240px;
+  height: 200px;
+  align-self: center;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#exhibit-details {
+  float: left;
+  width: 600px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+#imagePic {
+  height: 400px;
+  width: 600px;
+  float: left;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
