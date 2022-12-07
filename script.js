@@ -18,19 +18,33 @@ let comments = document.querySelector("#comments");
 let form = document.querySelector("#form");
 form.addEventListener("submit", (e) => commentSubmitter(e));
 let exhibitForForm = {};
-
+//
+form.addEventListener("mouseover", (e) => {
+  let mouseOverTarget = e.target.submit;
+  mouseOverTarget = "green";
+});
 //Function to render image display
 function renderExhibits(exhibitsArray) {
   exhibitsArray.forEach((exhibit) => {
-    exhibitForForm = exhibit;
     let image = document.createElement("img");
     image.src = exhibit.image;
     imageContainer.appendChild(image);
     image.addEventListener("click", () => renderDetails(exhibit));
+    image.addEventListener("mouseover", () => {
+      image.style.maxHeight = 180 + "px";
+      image.style.maxWidth = 240 + "px";
+      console.log(image.style.maxHeight);
+    });
+    image.addEventListener("mouseout", () => {
+      image.style.maxHeight = 200 + "px";
+      image.style.maxWidth = 240 + "px";
+      console.log(image.style.maxHeight);
+    });
   });
 }
 
 function renderDetails(exhibit) {
+  exhibitForForm = exhibit;
   name.textContent = exhibit.name;
   climate.textContent = exhibit.section;
   description.textContent = exhibit.description;
@@ -42,7 +56,7 @@ function renderDetails(exhibit) {
 function commentSubmitter(e) {
   e.preventDefault();
   exhibitForForm.comments =
-    exhibitForForm.comments + "\n/" + e.target.text.value;
+    "|" + e.target.text.value + "| " + exhibitForForm.comments;
   renderDetails(exhibitForForm);
   form.reset();
 }
