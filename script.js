@@ -27,20 +27,21 @@ function renderExhibits(exhibitsArray) {
     let image = document.createElement("img");
     image.src = exhibit.image;
     imageContainer.appendChild(image);
+    //click event listener uses renderDetails to show the details of image that was clicked
     image.addEventListener("click", () => renderDetails(exhibit));
+    //On mouseover images will be slightly shorter
     image.addEventListener("mouseover", () => {
       image.style.maxHeight = 180 + "px";
       image.style.maxWidth = 240 + "px";
-      console.log(image.style.maxHeight);
     });
+    //On mouseout images return to normal
     image.addEventListener("mouseout", () => {
       image.style.maxHeight = 200 + "px";
       image.style.maxWidth = 240 + "px";
-      console.log(image.style.maxHeight);
     });
   });
 }
-
+//Called in the click event listener and commentSubmitter to update display
 function renderDetails(exhibit) {
   exhibitForForm = exhibit;
   name.textContent = exhibit.name;
@@ -50,7 +51,7 @@ function renderDetails(exhibit) {
   rating.textContent = exhibit.rating + " Stars";
   comments.textContent = exhibit.comments;
 }
-
+//Adds comments to the object they were submitted for
 function commentSubmitter(e) {
   e.preventDefault();
   exhibitForForm.comments =
